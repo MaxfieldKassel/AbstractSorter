@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Abstract Sorter</title>
+    <script src="sorting.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <h2 style="color:red" id="errorText"></h2>
+    <h2 id="title"></h2>
+    <p id="text"></p>
+    <div class="row">
+        <div class="column">
+            <br>
+            <button class="button" id="prevButton" onclick="previous()">Previous</button>
+        </div>
+        <div class="column">
+            <input type="radio" name="sort" value="Unsorted" id="unsorted" checked>UNSORTED<br>
+            <input type="radio" name="sort" value="Include" id="include">INCLUDE<br>
+            <input type="radio" name="sort" value="Exclude1" id="exclude1">EXCLUDE: Abstract or title must be written in
+            English<br>
+            <input type="radio" name="sort" value="Exclude2" id="exclude2">EXCLUDE: Abstract or title must mention
+            simulation<br>
+            <input type="radio" name="sort" value="Exclude3" id="exclude3">EXCLUDE: Abstract or title must include
+            robot<br>
+            <input type="radio" name="sort" value="Exclude4" id="exclude4">EXCLUDE: Exclude if abstract or title
+            mentions only biomimetic robot<br>
+            <input type="radio" name="sort" value="Exclude5" id="exclude5">EXCLUDE: Exclude if abstract or title
+            mentions only space, not air, land, or sea<br>
+            <input type="radio" name="sort" value="Exclude6" id="exclude6">EXCLUDE: Exclude if abstract or title
+            mentions only human training<br>
+            <input type="radio" name="sort" value="Exclude7" id="exclude7">EXCLUDE: Abstract and/or title must mention
+            simulation transfer to a physical robot<br>
+        </div>
+        <div class="column">
+            <br>
+            <button class="button" id="nextButton" onclick="next()">Next</button>
+        </div>
+    </div>
+    <div class="move">
+        <div class="centeredButton">
+            <button class="button" id="backButton" onclick="back()">Back</button>
+            <button class="button" id="saveButton" onclick="saveFile()">Save</button>
+        </div>
+    </div>
+</head>
+
+</html>
